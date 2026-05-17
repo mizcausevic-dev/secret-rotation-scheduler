@@ -39,7 +39,7 @@ flowchart LR
   F --> G
 ```
 
-Additional detail lives in [C:\Users\chaus\dev\repos\secret-rotation-scheduler\docs\architecture.md](/C:/Users/chaus/dev/repos/secret-rotation-scheduler/docs/architecture.md).
+Additional detail lives in [docs/architecture.md](./docs/architecture.md).
 
 ## Example Payload
 
@@ -82,7 +82,7 @@ Additional detail lives in [C:\Users\chaus\dev\repos\secret-rotation-scheduler\d
 ## Local Run
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\secret-rotation-scheduler"
+cd secret-rotation-scheduler
 py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --port 4461
